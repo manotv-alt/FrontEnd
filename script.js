@@ -1,4 +1,4 @@
-const container = document.getElementById('container');
+const container = document.getElementById('cont');
 const darkBtn = document.getElementById('dark-button');
 const lightBtn = document.getElementById('light-button');
 
