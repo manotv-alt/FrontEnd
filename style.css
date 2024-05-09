@@ -23,6 +23,7 @@ body{
     box-shadow: 0 0 5px rgba(34, 0, 126, 0.452);;
     position: relative;
     overflow: hidden;
+    display: flex;
     width: 768px;
     max-width: 100%;
     min-height: 480px;
@@ -33,6 +34,7 @@ body{
     border-radius: 30px;
     box-shadow: 0 0 5px rgba(68, 0, 255, 0.863);;
     position: relative;
+    display: flex;
     overflow: hidden;
     width: 768px;
     max-width: 100%;
@@ -85,7 +87,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 41px;
     height: 100%;
 }
 
@@ -117,7 +119,6 @@ body{
 .container.active .cont {
     opacity: 1;
     z-index: 5;
-    transition: 0.7s;
     background-color: #383838;
 }
 
@@ -129,7 +130,7 @@ body{
     display: flex;
     align-items: center;
     padding: 10px;
-    color: #000000;
+    color: #ffffff;
     animation: transition 1s alternate-reverse infinite;
 }
 
@@ -235,5 +236,20 @@ body{
     }
     100% {
         color: rgb(214, 79, 0);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container{
+        width: 400px;
+    }
+    .container .cont{
+        width: 400px;
+    }
+    .container .back{
+        padding: 0 25px;
+    }
+    .social-icons a{
+        width: 150px;
     }
 }
